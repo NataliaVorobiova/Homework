@@ -1,0 +1,774 @@
+{
+  "id": "387b5124-a1c5-4b50-8a8d-55665ebe4302",
+  "version": "2.0",
+  "name": "Homework in Selenium IDE",
+  "url": "https://rozetka.com.ua",
+  "tests": [{
+    "id": "9e6206d4-d425-4410-a88f-e1d4c14797a0",
+    "name": "Додавання товару у кошик",
+    "commands": [{
+      "id": "a0e7fa29-b3ad-4d7d-a436-04b9b68fbdb4",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "14172569-bb4c-41d5-a541-97a589f85b3f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c6cf1689-761e-4793-8be5-5a396114f496",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,300)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "52da989f-1b35-4732-8f6c-39c76b0e22da",
+      "comment": "",
+      "command": "click",
+      "target": "css=.main-goods:nth-child(1) .main-goods__cell:nth-child(1) img",
+      "targets": [
+        ["css=.main-goods:nth-child(1) .main-goods__cell:nth-child(1) img", "css:finder"],
+        ["xpath=//img[@alt='Тетрадь школьная Мрії Збуваються 96л в клетку арт. 3214']", "xpath:img"],
+        ["xpath=//rz-app-tile/div/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a6b0da15-4f30-4be8-b129-df5538357de9",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5c761456-8586-44b7-949b-d95d4616de16",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//div[@id='#scrollArea']/div/div[2]/rz-product-main-info/div/div/ul/li/rz-product-buy-btn/app-buy-button/button",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3c33f65e-6149-4bd8-b0df-e322f80c51aa",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='#scrollArea']/div/div[2]/rz-product-main-info/div/div/ul/li/rz-product-buy-btn/app-buy-button/button",
+      "targets": [
+        ["css=.buy-button", "css:finder"],
+        ["xpath=(//button[@type='button'])[15]", "xpath:attributes"],
+        ["xpath=//div[@id='#scrollArea']/div/div[2]/rz-product-main-info/div/div/ul/li/rz-product-buy-btn/app-buy-button/button", "xpath:idRelative"],
+        ["xpath=//app-buy-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Купить')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "62150d42-16dd-4f67-b07d-0480b383b1e9",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "css=.modal__close",
+      "targets": [
+        ["css=.modal__close", "css:finder"],
+        ["xpath=(//button[@type='button'])[53]", "xpath:attributes"],
+        ["xpath=//div[3]/div/button", "xpath:position"]
+      ],
+      "value": "29,23.5"
+    }, {
+      "id": "05c7b93e-b445-4815-9354-76564e5c10c9",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "css=.modal__close",
+      "targets": [
+        ["css=.modal__close", "css:finder"],
+        ["xpath=(//button[@type='button'])[53]", "xpath:attributes"],
+        ["xpath=//div[3]/div/button", "xpath:position"]
+      ],
+      "value": "29,23.5"
+    }, {
+      "id": "e56a5b31-fb8b-4d0e-9087-b2374a389532",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "css=.modal__close",
+      "targets": [
+        ["css=.modal__close", "css:finder"],
+        ["xpath=(//button[@type='button'])[53]", "xpath:attributes"],
+        ["xpath=//div[3]/div/button", "xpath:position"]
+      ],
+      "value": "29,23.5"
+    }, {
+      "id": "85954dfc-4c63-4d4f-92c6-0c3b6630df8f",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//rz-shopping-cart/div/div/button",
+      "targets": [],
+      "value": "Продовжити покупки"
+    }, {
+      "id": "49b406a2-81ed-4426-95f3-04e38bf25160",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//rz-shopping-cart/div/div/button",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "15e2e897-b412-4b24-bee4-cb13dbe42b1b",
+    "name": "Зміна кількості товарів у кошику",
+    "commands": [{
+      "id": "ce548600-8b71-4dd4-813d-e34eefa06f11",
+      "comment": "",
+      "command": "open",
+      "target": "/ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0f377867-1e73-4846-85fc-06a5388bd7cd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3e873f16-bfd6-48e5-8739-2d8f56a4402c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.header__button--active > svg",
+      "targets": [
+        ["css=.header__button--active > svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "f323e5d6-6e89-436e-bdef-9d6406598388",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//rz-cart-counter/div/input",
+      "targets": [
+        ["css=.ng-touched", "css:finder"],
+        ["xpath=//rz-cart-counter/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "576d238b-c197-4c06-aabc-6c2fa8955a2d",
+      "comment": "",
+      "command": "assertEditable",
+      "target": "xpath=//rz-cart-counter/div/input",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "79d79750-c05f-47ce-9fc1-26693a1cc321",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=(//button[@type='button'])[22]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e8907b7f-f67b-4e40-ab5b-0ead50586840",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=(//button[@type='button'])[23]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "99d3380b-4ca6-4533-b976-d66d799862b5",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//button[@type='button'])[23]",
+      "targets": [
+        ["css=.cart-list__item:nth-child(1) .button:nth-child(3)", "css:finder"],
+        ["xpath=(//button[@type='button'])[23]", "xpath:attributes"],
+        ["xpath=//rz-cart-counter/div/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c08f11ce-1c69-4856-b58d-09b88e9180e7",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//button[@type='button'])[22]",
+      "targets": [
+        ["css=.cart-list__item:nth-child(1) .cart-product__footer .button:nth-child(1)", "css:finder"],
+        ["xpath=(//button[@type='button'])[22]", "xpath:attributes"],
+        ["xpath=//rz-cart-counter/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "236cd573-2142-4511-9824-b9cb4b8e2fc7",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "css=.modal__close",
+      "targets": [
+        ["css=.modal__close", "css:finder"],
+        ["xpath=(//button[@type='button'])[20]", "xpath:attributes"],
+        ["xpath=//div[3]/div/button", "xpath:position"]
+      ],
+      "value": "33,25"
+    }, {
+      "id": "10d0aadc-bf80-4fe1-b4c4-1425579701b9",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "css=.modal__close",
+      "targets": [
+        ["css=.modal__close", "css:finder"],
+        ["xpath=(//button[@type='button'])[20]", "xpath:attributes"],
+        ["xpath=//div[3]/div/button", "xpath:position"]
+      ],
+      "value": "33,25"
+    }, {
+      "id": "2b89aebf-6794-4e5c-894b-6690f993676e",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "css=.modal__close",
+      "targets": [
+        ["css=.modal__close", "css:finder"],
+        ["xpath=(//button[@type='button'])[20]", "xpath:attributes"],
+        ["xpath=//div[3]/div/button", "xpath:position"]
+      ],
+      "value": "33,25"
+    }, {
+      "id": "c13d7e4d-ba4a-4cc0-91fc-7f4d2a858919",
+      "comment": "",
+      "command": "click",
+      "target": "css=.modal__close",
+      "targets": [
+        ["css=.modal__close", "css:finder"],
+        ["xpath=(//button[@type='button'])[20]", "xpath:attributes"],
+        ["xpath=//div[3]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "4ac1df2d-0216-4050-a224-99924e2cd5c1",
+    "name": "Видалення товару з кошика",
+    "commands": [{
+      "id": "0e53cc4f-b780-4ebb-938f-08cd18a99735",
+      "comment": "",
+      "command": "open",
+      "target": "/ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "94f6f074-0321-4b4c-8545-8cba02c6a74e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a3958de2-6fcd-482a-a530-d9304020eb13",
+      "comment": "",
+      "command": "click",
+      "target": "css=.header__button--active use",
+      "targets": [
+        ["css=.header__button--active use", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "1656fa34-97ef-4d7c-b5ad-9633dff5d16e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//h3[contains(.,'Кошик')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7bc1aceb-3c0e-47cd-8313-2bce135c9805",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//h3[contains(.,'Кошик')]",
+      "targets": [],
+      "value": "Кошик"
+    }, {
+      "id": "d285c029-4ad7-44ea-b0b6-2f1ecfabf314",
+      "comment": "",
+      "command": "click",
+      "target": "id=cartProductActions1",
+      "targets": [
+        ["id=cartProductActions1", "id"],
+        ["css=#cartProductActions1", "css:finder"],
+        ["xpath=//button[@id='cartProductActions1']", "xpath:attributes"],
+        ["xpath=//li[2]/rz-cart-product/div/div/rz-popup-menu/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "615604ed-75d3-404f-9ba9-07c90bbd9f57",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.context-menu-actions__button",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "16b55bc8-0d24-4e4b-90ec-73160e3d0bee",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//rz-trash-icon/button",
+      "targets": [],
+      "value": "Видалити"
+    }, {
+      "id": "259a8e3f-0634-437c-8ea6-fde031308395",
+      "comment": "",
+      "command": "click",
+      "target": "css=.context-menu-actions__button",
+      "targets": [
+        ["css=.context-menu-actions__button", "css:finder"],
+        ["xpath=(//button[@type='button'])[25]", "xpath:attributes"],
+        ["xpath=//div[@id='cartProductActions1']/ul/li/rz-trash-icon/button", "xpath:idRelative"],
+        ["xpath=//rz-trash-icon/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Видалити')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a6188ecb-8302-4b28-b8f3-715b895e9f13",
+      "comment": "",
+      "command": "click",
+      "target": "css=.modal__close",
+      "targets": [
+        ["css=.modal__close", "css:finder"],
+        ["xpath=(//button[@type='button'])[20]", "xpath:attributes"],
+        ["xpath=//div[3]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "60a8015d-813a-4a8f-8886-d08167385541",
+    "name": "Пошук товару за нзвою",
+    "commands": [{
+      "id": "26333f6e-a872-4de7-ad91-20af8ef83c3d",
+      "comment": "",
+      "command": "open",
+      "target": "/ua/115997293/p115997293/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "676977aa-be67-4881-b319-bd0a463e3daf",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dc949b47-dd03-4b8e-ab12-e4cf9e638322",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//input[@name='search']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "433628a7-9fb0-423f-94e3-96bdc2fdc2b6",
+      "comment": "",
+      "command": "assertEditable",
+      "target": "xpath=//input[@name='search']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "84a002b3-c9b5-48c2-88e4-23747eae7240",
+      "comment": "",
+      "command": "click",
+      "target": "name=search",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.search-form__input", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7e434d18-199b-4d1a-8e8e-7c6400826986",
+      "comment": "",
+      "command": "type",
+      "target": "name=search",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.search-form__input", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "фарба акрілова зелена"
+    }, {
+      "id": "780f4201-bd02-4b32-9736-d0a176600132",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//form/button",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a3673e1e-1dc6-4bcd-bf69-c319cf0f3b0c",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//form/button",
+      "targets": [],
+      "value": "Знайти"
+    }, {
+      "id": "92dd32bf-cb3f-4889-bee3-a9fa170751e1",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.button_color_green",
+      "targets": [
+        ["css=.button_color_green", "css:finder"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Знайти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d534966-8f2f-485a-b888-f30159fe24ee",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button_color_green",
+      "targets": [
+        ["css=.button_color_green", "css:finder"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Знайти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec966c64-1b46-4b87-9407-bd3becc58522",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.catalog-grid__cell:nth-child(1) .ng-lazyloaded:nth-child(1)",
+      "targets": [
+        ["css=.catalog-grid__cell:nth-child(1) .ng-lazyloaded:nth-child(1)", "css:finder"],
+        ["xpath=//img[@alt='Фарба-металік акрілова Plaid Різдвяний зелений (491)']", "xpath:img"],
+        ["xpath=//div[2]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8dd6e70f-c594-48f7-9a60-b80d51060fde",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.goods-tile__picture > .display-none:nth-child(1)",
+      "targets": [
+        ["css=.goods-tile__picture > .display-none:nth-child(1)", "css:finder"],
+        ["xpath=//img[@alt='Фарба-металік акрілова Plaid Різдвяний зелений (491)']", "xpath:img"],
+        ["xpath=//div[2]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "382f2b7b-5887-41bf-a625-b2ba9f99b0a0",
+    "name": "Вхід використовуючи валідну електрону пошту та невалідний пароль",
+    "commands": [{
+      "id": "11f7fccd-7710-477d-a7af-a48e54db13a8",
+      "comment": "",
+      "command": "open",
+      "target": "/ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "13981aa6-1031-4770-a4ea-70f17a757582",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aaa70806-774f-4898-ac04-5ebed1bfd51c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.header__button > .ng-tns-c94-1 > .ng-tns-c94-1",
+      "targets": [
+        ["css=.header__button > .ng-tns-c94-1 > .ng-tns-c94-1", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "58b9954a-1db1-44da-9721-9f98949fdc17",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='cdk-overlay-0']/nav/div/div[2]/div/div/div[2]/div/button",
+      "targets": [
+        ["css=.button--link:nth-child(1)", "css:finder"],
+        ["xpath=(//button[@type='button'])[21]", "xpath:attributes"],
+        ["xpath=//div[@id='cdk-overlay-0']/nav/div/div[2]/div/div/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div/div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Вхід')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ecdffb7-79f7-4785-8c18-54a2a4467511",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=auth_email",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b7d762a7-6187-460c-8d8b-2b2a18228d19",
+      "comment": "",
+      "command": "assertEditable",
+      "target": "id=auth_email",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a2f3044a-8ac0-408e-8dba-c57453d2a000",
+      "comment": "",
+      "command": "click",
+      "target": "id=auth_email",
+      "targets": [
+        ["id=auth_email", "id"],
+        ["css=#auth_email", "css:finder"],
+        ["xpath=//input[@id='auth_email']", "xpath:attributes"],
+        ["xpath=//fieldset/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "32bf4ad7-50cf-4284-827a-7d119bcae313",
+      "comment": "",
+      "command": "type",
+      "target": "id=auth_email",
+      "targets": [
+        ["id=auth_email", "id"],
+        ["css=#auth_email", "css:finder"],
+        ["xpath=//input[@id='auth_email']", "xpath:attributes"],
+        ["xpath=//fieldset/div/input", "xpath:position"]
+      ],
+      "value": "natarizhik85@gmail.com"
+    }, {
+      "id": "6c701663-a9ab-4343-a4ed-3e61f001f838",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form__toggle-password > svg",
+      "targets": [
+        ["css=.form__toggle-password > svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "71c0416b-6a8e-4d49-87e4-12035a3eb004",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=auth_pass",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b397fede-fd58-457b-b00a-78839a642021",
+      "comment": "",
+      "command": "assertEditable",
+      "target": "id=auth_pass",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1615bc3b-5e7c-4863-b2c4-79afb4c79f70",
+      "comment": "",
+      "command": "click",
+      "target": "id=auth_pass",
+      "targets": [
+        ["id=auth_pass", "id"],
+        ["css=#auth_pass", "css:finder"],
+        ["xpath=//input[@id='auth_pass']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5cb5d378-9723-42bc-b555-e32b1c390204",
+      "comment": "",
+      "command": "type",
+      "target": "id=auth_pass",
+      "targets": [
+        ["id=auth_pass", "id"],
+        ["css=#auth_pass", "css:finder"],
+        ["xpath=//input[@id='auth_pass']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "htrdvhu3578"
+    }, {
+      "id": "e359104b-64c5-457e-a597-7bc2b249f9ef",
+      "comment": "",
+      "command": "click",
+      "target": "css=.auth-modal__remember-checkbox",
+      "targets": [
+        ["css=.auth-modal__remember-checkbox", "css:finder"],
+        ["xpath=//div[3]/label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "60fadc00-282b-4a98-a90f-108ec45462a1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.auth-modal__submit",
+      "targets": [
+        ["css=.auth-modal__submit", "css:finder"],
+        ["xpath=//div[5]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Увійти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "02963f69-2a0e-4c10-8c31-95b49d9f5bcd",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=strong",
+      "targets": [],
+      "value": "Введено невірний пароль!"
+    }]
+  }, {
+    "id": "a955df1b-a899-4cd3-935d-e8ab129df71d",
+    "name": "Вхід на сайт з невалідною електроною поштою",
+    "commands": [{
+      "id": "740f4ab0-d94a-4841-b47d-940020358b40",
+      "comment": "",
+      "command": "open",
+      "target": "/ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bf6c4afc-cb41-4ff4-b1bd-94291a8022c2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "905ba32a-f73c-4ed4-954e-be78bd0a9971",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.header__button > .ng-tns-c94-1 > .ng-tns-c94-1",
+      "targets": [
+        ["css=.header__button > .ng-tns-c94-1 > .ng-tns-c94-1", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "2f8367f5-2cb0-41a2-919f-092903f12bde",
+      "comment": "",
+      "command": "click",
+      "target": "css=.header__button > .ng-tns-c94-1 > .ng-tns-c94-1",
+      "targets": [
+        ["css=.header__button > .ng-tns-c94-1 > .ng-tns-c94-1", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "7cf1bfdc-b264-4589-b9c2-65b751ddb6ad",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.header__button > .ng-tns-c94-1 > .ng-tns-c94-1",
+      "targets": [
+        ["css=.header__button > .ng-tns-c94-1 > .ng-tns-c94-1", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ea2543e-bb01-43f2-b237-773b05cdffd8",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "xpath=//div[@id='cdk-overlay-0']/nav/div/div[2]/div/div/div[2]/div/button",
+      "targets": [
+        ["css=.button--link:nth-child(1)", "css:finder"],
+        ["xpath=(//button[@type='button'])[21]", "xpath:attributes"],
+        ["xpath=//div[@id='cdk-overlay-0']/nav/div/div[2]/div/div/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div/div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Вхід')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e5629679-aab0-4334-859f-499194d49f37",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='cdk-overlay-0']/nav/div/div[2]/div/div/div[2]/div/button",
+      "targets": [
+        ["css=.button--link:nth-child(1)", "css:finder"],
+        ["xpath=(//button[@type='button'])[21]", "xpath:attributes"],
+        ["xpath=//div[@id='cdk-overlay-0']/nav/div/div[2]/div/div/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div/div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Вхід')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2cb80b6-9ea1-4af8-b50c-48316b63beaf",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=auth_email",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2eaa1b9a-6ddb-4b56-a780-df0c64920fc1",
+      "comment": "",
+      "command": "click",
+      "target": "id=auth_email",
+      "targets": [
+        ["id=auth_email", "id"],
+        ["css=#auth_email", "css:finder"],
+        ["xpath=//input[@id='auth_email']", "xpath:attributes"],
+        ["xpath=//fieldset/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3b48a35f-e4b5-45cf-8560-08e22f3251fc",
+      "comment": "",
+      "command": "assertEditable",
+      "target": "id=auth_email",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dee25153-bc6d-4729-9067-c1a052177896",
+      "comment": "",
+      "command": "type",
+      "target": "id=auth_email",
+      "targets": [
+        ["id=auth_email", "id"],
+        ["css=#auth_email", "css:finder"],
+        ["xpath=//input[@id='auth_email']", "xpath:attributes"],
+        ["xpath=//fieldset/div/input", "xpath:position"]
+      ],
+      "value": "cdryhbbd12143!"
+    }, {
+      "id": "7ff26386-e8dd-4e89-b560-285cde32b386",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=auth_pass",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "172b8530-0203-4034-95b2-3a0158b8e583",
+      "comment": "",
+      "command": "click",
+      "target": "id=auth_pass",
+      "targets": [
+        ["id=auth_pass", "id"],
+        ["css=#auth_pass", "css:finder"],
+        ["xpath=//input[@id='auth_pass']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "68c5e990-a5e6-46e2-9ac4-2fbb4ca1818b",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.error-message",
+      "targets": [],
+      "value": "Введено невірну адресу ел. пошти або номер телефону"
+    }, {
+      "id": "36a34b06-c8df-4f73-a809-84af32362424",
+      "comment": "",
+      "command": "assertEditable",
+      "target": "id=auth_pass",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7d7cc135-74db-4a1a-bb14-8298f3548c30",
+      "comment": "",
+      "command": "type",
+      "target": "id=auth_pass",
+      "targets": [
+        ["id=auth_pass", "id"],
+        ["css=#auth_pass", "css:finder"],
+        ["xpath=//input[@id='auth_pass']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "cvtruuuuu"
+    }, {
+      "id": "284cd55d-5613-4991-975a-20c0f3ad0c7a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.auth-modal__submit",
+      "targets": [
+        ["css=.auth-modal__submit", "css:finder"],
+        ["xpath=//div[5]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Увійти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "4a2fdbc1-6a1b-4861-ab59-5dad35239248",
+    "name": "rozetka.com.ua/",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a955df1b-a899-4cd3-935d-e8ab129df71d", "382f2b7b-5887-41bf-a625-b2ba9f99b0a0", "60a8015d-813a-4a8f-8886-d08167385541", "9e6206d4-d425-4410-a88f-e1d4c14797a0", "4ac1df2d-0216-4050-a224-99924e2cd5c1", "15e2e897-b412-4b24-bee4-cb13dbe42b1b"]
+  }],
+  "urls": ["https://rozetka.com.ua/"],
+  "plugins": []
+}
